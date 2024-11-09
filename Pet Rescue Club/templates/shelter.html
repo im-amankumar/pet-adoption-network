@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PET RESCUE CLUB</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script> 
+        function confirmAction() { 
+
+            const checkbox = document.getElementById('termsCheckbox'); 
+
+            if (checkbox.checked) { 
+                 const agree = confirm("Do you agree to the terms and conditions?");
+                  if (!agree) { 
+                    checkbox.checked = false; 
+                    }
+            } 
+            else{ 
+                const agree = confirm("Do you agree to the terms and conditions?");
+                if (agree) { 
+                    checkbox.checked = true; 
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+    <div class="register-pet">
+        <center>
+
+            <form action="" method="post">
+                <table>
+                    <tr>
+                        <td><label for="pname">Pet Name : </label></td>
+                        <td><input type="text" placeholder="pet name" name="pname" id="pname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                        <td><input type="radio" name="gender" id="male"> Male <input type="radio" name="gender" id="Female">   Female</td>
+                            
+                    </tr>
+                    <tr>
+                        <td><label for="pcate">Pet Category : </label></td>
+                        <td><select name="pcate" id="pcate" required>
+                            <option value="none">select one</option>
+                            <option value="1">Dog</option>
+                            <option value="2">Cat</option>
+                            <option value="3">Other</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="breed">breed : </label></td>
+                        <td><input type="text" placeholder="breed-info" name="breed" id="breed" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Age (in months) : </label></td>
+                        <td><input type="number" name="age" id="age" placeholder="months" min="1"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="desp">Description: </label></td>
+                        <td><textarea name="desp" id="desp" placeholder="pet-description"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pic">Upload-photo: </label></td>
+                        <td><input type="file" name="pic" id="pic"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Do you agree to the following terms and conditions?</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" onclick="confirmAction()"  name="" id="termsCheckbox" required> I agree to the <a href="../static/termsandcond.pdf" target="_blank">terms of services</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2" class="register-button">
+                            <input type="submit" value="REGISTER PET">
+                        </td>
+                    </tr>
+                    
+                </table>
+            </form>
+            
+        </center>
+    </div>
+
+</body>
+</html>
+

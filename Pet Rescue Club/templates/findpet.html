@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PET RESCUE CLUB</title>
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+<body>
+
+
+    <div class="header" id="home">
+        <ul>
+
+            <li><a href="index.html"><h2>Home</h2></a></li>
+            <li><a href="about.html"><h2>About</h2></a></li>
+            <li><a href="findpet.html"><h2>Find a pet</h2></a></li>
+            <li><a href="discover.html"><h2>Discover</h2></a></li>
+            <li><a href="contact.html"><h2>Contact</h2></a></li>
+            <li style="float: right;"><a href="login.html"><h2>Login/Register</h2></a></li>
+
+        </ul>
+    </div>
+
+
+    <!-- pets finder for adoption -->
+
+    <div class="view-pet">
+        
+    <div class="filter-row">
+        <button>Dogs</button>
+        <button>Cats</button>
+        <button>Other</button>
+
+        <div class="filter-column">
+            <label for="breed-select">Breed</label>
+            <select id="breed-select">
+                <option value="any">Any</option>
+                <optgroup label="Dogs">
+                    <option value="beagle">Beagle</option>
+                    <option value="boxer">Boxer</option>
+                    <option value="cocker-spaniel">Cocker Spaniel</option>
+                    <option value="dachshund">Dachshund</option>
+                    <option value="german-shepherd">German Shepherd</option>
+                    <option value="labrador-retriever">Labrador Retriever</option>
+                    <option value="pug">Pug</option>
+                    <option value="shih-tzu">Shih Tzu</option>
+                </optgroup>
+                <optgroup label="Cats">
+                    <option value="abyssinian">Abyssinian</option>
+                    <option value="bengal">Bengal</option>
+                    <option value="himalayan">Himalayan</option>
+                    <option value="persian">Persian</option>
+                    <option value="russian-blue">Russian Blue</option>
+                    <option value="scottish-fold">Scottish Fold</option>
+                    <option value="siamese">Siamese</option>
+                </optgroup>
+            </select>
+        </div>
+        <div class="filter-column">
+            <label for="gender-select">Gender</label>
+            <select id="gender-select">
+                <option value="any">Any</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="filter-column">
+            <label for="age-select">Age</label>
+            <select id="age-select">
+                <option value="any">Any</option>
+                <option value="puppyhood">Puppyhood (Upto 6 months)</option>
+                <option value="adolescence">Adolescence (6-18 months)</option>
+                <option value="adulthood">Adulthood (1.5-3 years)</option>
+                <option value="senior">Senior (3 years or more)</option>
+            </select>
+        </div>
+        <button id="filter-button" style="margin-left: auto;">Filter</button>
+    </div>
+
+    </div>
+
+
+    <div class="pet-container">
+        <div class="pet-card">
+            <img src="../static/pets/lab.jpeg" alt="Pet Picture">
+            <h3>Max</h3>
+            <p>Breed: Labrador Retriever</p>
+            <p>Sex: Male</p>
+            <p>Age: 2 years</p>
+            <button>Details</button>
+            <button>Adopt</button>
+        </div>
+        <div class="pet-card">
+            <img src="../static/pets/pug.jpeg" alt="Pet Picture">
+            <h3>Bella</h3>
+            <p>Breed: Pug</p>
+            <p>Sex: Male</p>
+            <p>Age: 1 year</p>
+            <button>Details</button>
+            <button>Adopt</button>
+        </div>
+        <div class="pet-card">
+            <img src="../static/pets/fold.jpg" alt="Pet Picture">
+            <h3>Lucy</h3>
+            <p>Breed: Scottish Fold</p>
+            <p>Sex: Female</p>
+            <p>Age: 3 months</p>
+            <button>Details</button>
+            <button>Adopt</button>
+        </div>
+        <div class="pet-card">
+            <img src="../static/pets/beagle.jpeg" alt="Pet Picture">
+            <h3>Charlie</h3>
+            <p>Breed: Beagle</p>
+            <p>Sex: Female</p>
+            <p>Age: 4 years</p>
+            <button>Details</button>
+            <button>Adopt</button>
+        </div>
+    </div>
+
+
+    <div class="footer">
+
+        <img src="../static/footer.png" alt="footer" width="100%">
+        <div class="content">
+
+            <table class="footer-table">
+                
+                <tr>
+                    <th><u>QUICK LINKS</u></th>
+                    <th><u>ABOUT US</u></th>
+                    <th><u>RESOURCES</u></th>
+                    <th><u>Contact Us</u></th>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <a href="">Discover Adoption</a> <br>
+                        <a href="">Donate</a> <br>
+                        <a href="">Volunteer</a> <br>
+                    </td>
+
+                    <td>
+                        <a href="">About Us</a><br>
+                        <a href="">Terms & Conditions</a><br>
+                        <a href="">Privacy Policy</a><br> 
+                    </td>
+
+                    <td>
+                    <a href="">Breeds</a> <br>
+                    <a href="">Feeding</a> <br>
+                    <a href="">Health & Wellness</a> <br>
+                    </td>
+
+                    <td>
+                        <p>112 Street, Hyderabad, Telangana India</p>
+                        <p>+91 1234567890</p>
+                        <p>xyz@example.com</p>
+                    </td>
+
+                </tr>
+                        
+            </table>
+
+            <center>
+
+                <div class="span-icon">
+
+                    Connect with us online : 
+
+                    <span><a href=""><img src="../static/icons/twitter.png" alt="twitter"></a></span>
+                    
+                    <span><a href=""><img src="../static/icons/linkedin.png" alt="linkedin"></a></span>
+                    
+                    <span><a href=""><img src="../static/icons/instagram.png" alt="instagram"></a></span>
+                    
+                    <span><a href=""><img src="../static/icons/facebook.png" alt="favebook"></a></span>
+                    
+                    <span><a href=""><img src="../static/icons/youtube.png" alt="youtube"></a></span>
+                    
+                    <span><a href=""><img src="../static/icons/whatsapp.png" alt="whatsapp"> /petrescueclub</a></span>
+                    
+                    <br> <br>
+
+                    <img src="../static/icons/trade-mark.png" alt="trade mark"> 2024 <span class="name">The Pet Rescue Club</span>. All trademarks are owned by Pet Rescue Club, or used with permission.
+                        
+                </div>
+            </center>
+        </div>
+    </div>
+</body>
+</html>
